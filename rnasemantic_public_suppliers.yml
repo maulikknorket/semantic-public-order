@@ -1,0 +1,26 @@
+---
+cubes:
+- name: rnasemantic_public_suppliers
+  sql_table: ".."
+  dimensions:
+  - name: supplier_id
+    sql: supplier_id
+    type: string
+    primary_key: false
+  - name: supplier_name
+    sql: supplier_name
+    type: string
+    primary_key: false
+  - name: supplier_region
+    sql: supplier_region
+    type: string
+    primary_key: false
+  - name: supplier_type
+    sql: supplier_type
+    type: string
+    primary_key: false
+  - name: rating
+    sql: rating
+    type: string
+    primary_key: false
+  measures: []

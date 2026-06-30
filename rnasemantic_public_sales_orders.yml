@@ -1,0 +1,30 @@
+---
+cubes:
+- name: rnasemantic_public_sales_orders
+  sql_table: ".."
+  dimensions:
+  - name: order_id
+    sql: order_id
+    type: string
+    primary_key: false
+  - name: customer_id
+    sql: customer_id
+    type: string
+    primary_key: false
+  - name: order_date
+    sql: order_date
+    type: string
+    primary_key: false
+  - name: ship_date
+    sql: ship_date
+    type: string
+    primary_key: false
+  - name: order_status
+    sql: order_status
+    type: string
+    primary_key: false
+  - name: sales_channel
+    sql: sales_channel
+    type: string
+    primary_key: false
+  measures: []

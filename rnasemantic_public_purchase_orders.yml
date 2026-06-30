@@ -1,0 +1,30 @@
+---
+cubes:
+- name: rnasemantic_public_purchase_orders
+  sql_table: ".."
+  dimensions:
+  - name: po_date
+    sql: po_date
+    type: string
+    primary_key: false
+  - name: supplier_id
+    sql: supplier_id
+    type: string
+    primary_key: false
+  - name: po_id
+    sql: po_id
+    type: string
+    primary_key: false
+  - name: expected_date
+    sql: expected_date
+    type: string
+    primary_key: false
+  - name: received_date
+    sql: received_date
+    type: string
+    primary_key: false
+  - name: po_status
+    sql: po_status
+    type: string
+    primary_key: false
+  measures: []

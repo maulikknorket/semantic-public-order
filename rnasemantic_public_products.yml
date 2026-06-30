@@ -1,0 +1,36 @@
+---
+cubes:
+- name: rnasemantic_public_products
+  sql_table: ".."
+  dimensions:
+  - name: product_id
+    sql: product_id
+    type: string
+    primary_key: false
+  - name: product_name
+    sql: product_name
+    type: string
+    primary_key: false
+  - name: category
+    sql: category
+    type: string
+    primary_key: false
+  - name: subcategory
+    sql: subcategory
+    type: string
+    primary_key: false
+  - name: brand
+    sql: brand
+    type: string
+    primary_key: false
+  - name: supplier_id
+    sql: supplier_id
+    type: string
+    primary_key: false
+  measures:
+  - name: unit_cost
+    type: sum
+    sql:
+  - name: list_price
+    type: avg
+    sql:

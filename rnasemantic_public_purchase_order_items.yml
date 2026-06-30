@@ -1,0 +1,27 @@
+---
+cubes:
+- name: rnasemantic_public_purchase_order_items
+  sql_table: ".."
+  dimensions:
+  - name: po_item_id
+    sql: po_item_id
+    type: string
+    primary_key: false
+  - name: po_id
+    sql: po_id
+    type: string
+    primary_key: false
+  - name: product_id
+    sql: product_id
+    type: string
+    primary_key: false
+  measures:
+  - name: qty_ordered
+    type: sum
+    sql:
+  - name: qty_received
+    type: sum
+    sql:
+  - name: unit_cost
+    type: sum
+    sql:

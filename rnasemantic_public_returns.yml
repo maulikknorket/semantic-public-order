@@ -1,0 +1,29 @@
+---
+cubes:
+- name: rnasemantic_public_returns
+  sql_table: ".."
+  dimensions:
+  - name: return_id
+    sql: return_id
+    type: string
+    primary_key: false
+  - name: order_id
+    sql: order_id
+    type: string
+    primary_key: false
+  - name: product_id
+    sql: product_id
+    type: string
+    primary_key: false
+  - name: return_date
+    sql: return_date
+    type: string
+    primary_key: false
+  - name: return_reason
+    sql: return_reason
+    type: string
+    primary_key: false
+  measures:
+  - name: return_qty
+    type: sum
+    sql:
